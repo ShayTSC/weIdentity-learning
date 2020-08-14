@@ -1,0 +1,131 @@
+[INFO] [2020-08-14 12:36:05] AbstractApplicationContext.prepareRefresh(583) | Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368239c8: startup date [Fri Aug 14 12:36:05 CST 2020]; root of context hierarchy
+[INFO] [2020-08-14 12:36:05] XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO] [2020-08-14 12:36:06] Service.initJavaOpt(296) | set jdk.tls.namedGroups opt, value : secp256k1
+[INFO] [2020-08-14 12:36:06] ChannelConnections.init(318) |  all connections: [ConnectionInfo{host='127.0.0.1', port=20200}]
+[INFO] [2020-08-14 12:36:06] ChannelConnections.initSslContext(546) |  ca certificate: ca.crt, sdk certificate: sdk.crt, sdk key: sdk.key
+[INFO] [2020-08-14 12:36:07] ChannelHandler.userEventTriggered(45) |  handshake success, host: 127.0.0.1, port: 20200, ctx: 521593487
+[INFO] [2020-08-14 12:36:07] ConnectionCallback.onConnect(91) |  connect 127.0.0.1:20200 success, ctx: 521593487
+[INFO] [2020-08-14 12:36:07] ConnectionCallback.queryNodeVersion(207) |  query node version host: 127.0.0.1:20200, seq: 83bface1cbae451e93e2463dd1878dfa, content: {"jsonrpc":"2.0","method":"getClientVersion","params":[],"id":0}
+[INFO] [2020-08-14 12:36:07] ConnectionCallback$2.onResponse(258) |  node: Version [buildTime=20200619 07:25:51, buildType=Darwin/appleclang/RelWithDebInfo, chainID=1, version=2.5.0, gitBranch=HEAD, gitCommit=72c6d770e5cf0f4197162d0e26005ec03d30fcfe, supportedVersion=2.5.0], content: {"id":0,"jsonrpc":"2.0","result":{"Build Time":"20200619 07:25:51","Build Type":"Darwin/appleclang/RelWithDebInfo","Chain Id":"1","FISCO-BCOS Version":"2.5.0","Git Branch":"HEAD","Git Commit Hash":"72c6d770e5cf0f4197162d0e26005ec03d30fcfe","Supported Version":"2.5.0"}}
+
+[INFO] [2020-08-14 12:36:07] ConnectionCallback$2.onResponse(267) |  support channel handshake node: Version [buildTime=20200619 07:25:51, buildType=Darwin/appleclang/RelWithDebInfo, chainID=1, version=2.5.0, gitBranch=HEAD, gitCommit=72c6d770e5cf0f4197162d0e26005ec03d30fcfe, supportedVersion=2.5.0], content: {"id":0,"jsonrpc":"2.0","result":{"Build Time":"20200619 07:25:51","Build Type":"Darwin/appleclang/RelWithDebInfo","Chain Id":"1","FISCO-BCOS Version":"2.5.0","Git Branch":"HEAD","Git Commit Hash":"72c6d770e5cf0f4197162d0e26005ec03d30fcfe","Supported Version":"2.5.0"}}
+
+[INFO] [2020-08-14 12:36:07] ConnectionCallback$1.onResponse(167) |  channel protocol handshake success, set socket channel protocol, host: 127.0.0.1:20200, channel protocol: ChannelProtocol [protocol=3, nodeVersion=2.5.0, EnumProtocol=VERSION_3]
+[INFO] [2020-08-14 12:36:07] ConnectionCallback.sendUpdateTopicMessage(338) |  send update topic message request, seq: acbdc27cfe0f444eb5f6f61942318c39, content: ["_block_notify_1"]
+[INFO] [2020-08-14 12:36:07] ConnectionCallback.queryBlockNumber(370) |  query block number host: 127.0.0.1:20200, seq: 3aabd9bc2f5a4582baa122c6e5ba92af, content: {"jsonrpc":"2.0","method":"getBlockNumber","params":[1],"id":1}
+[INFO] [2020-08-14 12:36:07] ConnectionCallback$4.onResponse(395) |  query blocknumer, host:127.0.0.1:20200, blockNumber: 0 
+[INFO] [2020-08-14 12:36:07] Service.run(378) |  Connect to  nodes: [127.0.0.1:20200] ,groupId: 1 ,caCert: class path resource [ca.crt] ,sslKey: class path resource [sdk.key] ,sslCert: class path resource [sdk.crt] ,java version: 1.8.0_261 ,java vendor: Oracle Corporation
+[ERROR] [2020-08-14 12:36:43] ContractClassFactory.compileContract(75) |  name: HelloWorld, error: {}
+java.lang.NullPointerException
+	at console.common.ContractClassFactory.dynamicCompileJavaToClass(ContractClassFactory.java:116)
+	at console.common.ContractClassFactory.compileContract(ContractClassFactory.java:73)
+	at console.contract.ContractImpl.deploy(ContractImpl.java:87)
+	at console.ConsoleClient.main(ConsoleClient.java:106)
+[ERROR] [2020-08-14 12:36:43] ConsoleClient.main(400) |  message: Compile HelloWorld.java failed., e: {}
+java.lang.Exception: Compile HelloWorld.java failed.
+	at console.common.ContractClassFactory.compileContract(ContractClassFactory.java:76)
+	at console.contract.ContractImpl.deploy(ContractImpl.java:87)
+	at console.ConsoleClient.main(ConsoleClient.java:106)
+[INFO] [2020-08-14 12:39:03] AbstractApplicationContext.prepareRefresh(583) | Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368239c8: startup date [Fri Aug 14 12:39:03 CST 2020]; root of context hierarchy
+[INFO] [2020-08-14 12:39:03] XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO] [2020-08-14 12:39:04] Service.initJavaOpt(296) | set jdk.tls.namedGroups opt, value : secp256k1
+[INFO] [2020-08-14 12:39:04] ChannelConnections.init(318) |  all connections: [ConnectionInfo{host='127.0.0.1', port=20200}]
+[INFO] [2020-08-14 12:39:04] ChannelConnections.initSslContext(546) |  ca certificate: ca.crt, sdk certificate: sdk.crt, sdk key: sdk.key
+[INFO] [2020-08-14 12:39:04] ChannelHandler.userEventTriggered(45) |  handshake success, host: 127.0.0.1, port: 20200, ctx: 997476496
+[INFO] [2020-08-14 12:39:04] ConnectionCallback.onConnect(91) |  connect 127.0.0.1:20200 success, ctx: 997476496
+[INFO] [2020-08-14 12:39:04] ConnectionCallback.queryNodeVersion(207) |  query node version host: 127.0.0.1:20200, seq: 3ea129e11bb34eb4809dd13e181e432f, content: {"jsonrpc":"2.0","method":"getClientVersion","params":[],"id":0}
+[INFO] [2020-08-14 12:39:04] ConnectionCallback$2.onResponse(258) |  node: Version [buildTime=20200619 07:25:51, buildType=Darwin/appleclang/RelWithDebInfo, chainID=1, version=2.5.0, gitBranch=HEAD, gitCommit=72c6d770e5cf0f4197162d0e26005ec03d30fcfe, supportedVersion=2.5.0], content: {"id":0,"jsonrpc":"2.0","result":{"Build Time":"20200619 07:25:51","Build Type":"Darwin/appleclang/RelWithDebInfo","Chain Id":"1","FISCO-BCOS Version":"2.5.0","Git Branch":"HEAD","Git Commit Hash":"72c6d770e5cf0f4197162d0e26005ec03d30fcfe","Supported Version":"2.5.0"}}
+
+[INFO] [2020-08-14 12:39:04] ConnectionCallback$2.onResponse(267) |  support channel handshake node: Version [buildTime=20200619 07:25:51, buildType=Darwin/appleclang/RelWithDebInfo, chainID=1, version=2.5.0, gitBranch=HEAD, gitCommit=72c6d770e5cf0f4197162d0e26005ec03d30fcfe, supportedVersion=2.5.0], content: {"id":0,"jsonrpc":"2.0","result":{"Build Time":"20200619 07:25:51","Build Type":"Darwin/appleclang/RelWithDebInfo","Chain Id":"1","FISCO-BCOS Version":"2.5.0","Git Branch":"HEAD","Git Commit Hash":"72c6d770e5cf0f4197162d0e26005ec03d30fcfe","Supported Version":"2.5.0"}}
+
+[INFO] [2020-08-14 12:39:05] ConnectionCallback$1.onResponse(167) |  channel protocol handshake success, set socket channel protocol, host: 127.0.0.1:20200, channel protocol: ChannelProtocol [protocol=3, nodeVersion=2.5.0, EnumProtocol=VERSION_3]
+[INFO] [2020-08-14 12:39:05] ConnectionCallback.sendUpdateTopicMessage(338) |  send update topic message request, seq: 8872584d8c35448fb27acced2c04ec41, content: ["_block_notify_1"]
+[INFO] [2020-08-14 12:39:05] ConnectionCallback.queryBlockNumber(370) |  query block number host: 127.0.0.1:20200, seq: 50af4c16dcb044659bd5aeee8446dc62, content: {"jsonrpc":"2.0","method":"getBlockNumber","params":[1],"id":1}
+[INFO] [2020-08-14 12:39:05] ConnectionCallback$4.onResponse(395) |  query blocknumer, host:127.0.0.1:20200, blockNumber: 0 
+[INFO] [2020-08-14 12:39:05] Service.run(378) |  Connect to  nodes: [127.0.0.1:20200] ,groupId: 1 ,caCert: class path resource [ca.crt] ,sslKey: class path resource [sdk.key] ,sslCert: class path resource [sdk.crt] ,java version: 1.8.0_261 ,java vendor: Oracle Corporation
+[ERROR] [2020-08-14 12:39:40] ContractClassFactory.compileContract(75) |  name: HelloWorld, error: {}
+java.lang.NullPointerException
+	at console.common.ContractClassFactory.dynamicCompileJavaToClass(ContractClassFactory.java:116)
+	at console.common.ContractClassFactory.compileContract(ContractClassFactory.java:73)
+	at console.contract.ContractImpl.deploy(ContractImpl.java:87)
+	at console.ConsoleClient.main(ConsoleClient.java:106)
+[ERROR] [2020-08-14 12:39:40] ConsoleClient.main(400) |  message: Compile HelloWorld.java failed., e: {}
+java.lang.Exception: Compile HelloWorld.java failed.
+	at console.common.ContractClassFactory.compileContract(ContractClassFactory.java:76)
+	at console.contract.ContractImpl.deploy(ContractImpl.java:87)
+	at console.ConsoleClient.main(ConsoleClient.java:106)
+[INFO] [2020-08-14 12:43:39] AbstractApplicationContext.prepareRefresh(583) | Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5f2050f6: startup date [Fri Aug 14 12:43:39 CST 2020]; root of context hierarchy
+[INFO] [2020-08-14 12:43:39] XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO] [2020-08-14 12:43:40] Service.initJavaOpt(296) | set jdk.tls.namedGroups opt, value : secp256k1
+[INFO] [2020-08-14 12:43:40] ChannelConnections.init(318) |  all connections: [ConnectionInfo{host='127.0.0.1', port=20200}]
+[INFO] [2020-08-14 12:43:40] ChannelConnections.initSslContext(546) |  ca certificate: ca.crt, sdk certificate: sdk.crt, sdk key: sdk.key
+[ERROR] [2020-08-14 12:43:40] ChannelConnections.startConnect(449) |  all connections have failed, [ ssl handshake failed:/127.0.0.1:20200]
+[ERROR] [2020-08-14 12:43:40] Service.run(386) |  service init failed, error message:  Failed to connect to nodes: [ ssl handshake failed:/127.0.0.1:20200], error: 
+java.lang.RuntimeException:  Failed to connect to nodes: [ ssl handshake failed:/127.0.0.1:20200]
+	at org.fisco.bcos.channel.handler.ChannelConnections.startConnect(ChannelConnections.java:451)
+	at org.fisco.bcos.channel.client.Service.run(Service.java:332)
+	at console.ConsoleInitializer.init(ConsoleInitializer.java:121)
+	at console.ConsoleClient.main(ConsoleClient.java:45)
+[ERROR] [2020-08-14 12:43:40] ConsoleInitializer.init(123) |  message:  Failed to connect to nodes: [ ssl handshake failed:/127.0.0.1:20200], e: {}
+java.lang.RuntimeException:  Failed to connect to nodes: [ ssl handshake failed:/127.0.0.1:20200]
+	at org.fisco.bcos.channel.handler.ChannelConnections.startConnect(ChannelConnections.java:451)
+	at org.fisco.bcos.channel.client.Service.run(Service.java:332)
+	at console.ConsoleInitializer.init(ConsoleInitializer.java:121)
+	at console.ConsoleClient.main(ConsoleClient.java:45)
+[INFO] [2020-08-14 12:43:52] AbstractApplicationContext.prepareRefresh(583) | Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5f2050f6: startup date [Fri Aug 14 12:43:52 CST 2020]; root of context hierarchy
+[INFO] [2020-08-14 12:43:52] XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO] [2020-08-14 12:43:53] Service.initJavaOpt(296) | set jdk.tls.namedGroups opt, value : secp256k1
+[INFO] [2020-08-14 12:43:53] ChannelConnections.init(318) |  all connections: [ConnectionInfo{host='127.0.0.1', port=20200}]
+[INFO] [2020-08-14 12:43:53] ChannelConnections.initSslContext(546) |  ca certificate: ca.crt, sdk certificate: sdk.crt, sdk key: sdk.key
+[ERROR] [2020-08-14 12:43:53] ChannelConnections.startConnect(449) |  all connections have failed, [ ssl handshake failed:/127.0.0.1:20200]
+[ERROR] [2020-08-14 12:43:53] Service.run(386) |  service init failed, error message:  Failed to connect to nodes: [ ssl handshake failed:/127.0.0.1:20200], error: 
+java.lang.RuntimeException:  Failed to connect to nodes: [ ssl handshake failed:/127.0.0.1:20200]
+	at org.fisco.bcos.channel.handler.ChannelConnections.startConnect(ChannelConnections.java:451)
+	at org.fisco.bcos.channel.client.Service.run(Service.java:332)
+	at console.ConsoleInitializer.init(ConsoleInitializer.java:121)
+	at console.ConsoleClient.main(ConsoleClient.java:45)
+[ERROR] [2020-08-14 12:43:53] ConsoleInitializer.init(123) |  message:  Failed to connect to nodes: [ ssl handshake failed:/127.0.0.1:20200], e: {}
+java.lang.RuntimeException:  Failed to connect to nodes: [ ssl handshake failed:/127.0.0.1:20200]
+	at org.fisco.bcos.channel.handler.ChannelConnections.startConnect(ChannelConnections.java:451)
+	at org.fisco.bcos.channel.client.Service.run(Service.java:332)
+	at console.ConsoleInitializer.init(ConsoleInitializer.java:121)
+	at console.ConsoleClient.main(ConsoleClient.java:45)
+[INFO] [2020-08-14 12:44:16] AbstractApplicationContext.prepareRefresh(583) | Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5f2050f6: startup date [Fri Aug 14 12:44:16 CST 2020]; root of context hierarchy
+[INFO] [2020-08-14 12:44:16] XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO] [2020-08-14 12:44:17] Service.initJavaOpt(296) | set jdk.tls.namedGroups opt, value : secp256k1
+[INFO] [2020-08-14 12:44:17] ChannelConnections.init(318) |  all connections: [ConnectionInfo{host='127.0.0.1', port=20200}]
+[INFO] [2020-08-14 12:44:17] ChannelConnections.initSslContext(546) |  ca certificate: ca.crt, sdk certificate: sdk.crt, sdk key: sdk.key
+[ERROR] [2020-08-14 12:44:17] ChannelConnections.startConnect(449) |  all connections have failed, [ ssl handshake failed:/127.0.0.1:20200]
+[ERROR] [2020-08-14 12:44:17] Service.run(386) |  service init failed, error message:  Failed to connect to nodes: [ ssl handshake failed:/127.0.0.1:20200], error: 
+java.lang.RuntimeException:  Failed to connect to nodes: [ ssl handshake failed:/127.0.0.1:20200]
+	at org.fisco.bcos.channel.handler.ChannelConnections.startConnect(ChannelConnections.java:451)
+	at org.fisco.bcos.channel.client.Service.run(Service.java:332)
+	at console.ConsoleInitializer.init(ConsoleInitializer.java:121)
+	at console.ConsoleClient.main(ConsoleClient.java:45)
+[ERROR] [2020-08-14 12:44:17] ConsoleInitializer.init(123) |  message:  Failed to connect to nodes: [ ssl handshake failed:/127.0.0.1:20200], e: {}
+java.lang.RuntimeException:  Failed to connect to nodes: [ ssl handshake failed:/127.0.0.1:20200]
+	at org.fisco.bcos.channel.handler.ChannelConnections.startConnect(ChannelConnections.java:451)
+	at org.fisco.bcos.channel.client.Service.run(Service.java:332)
+	at console.ConsoleInitializer.init(ConsoleInitializer.java:121)
+	at console.ConsoleClient.main(ConsoleClient.java:45)
+[INFO] [2020-08-14 12:48:24] AbstractApplicationContext.prepareRefresh(583) | Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4df828d7: startup date [Fri Aug 14 12:48:24 CST 2020]; root of context hierarchy
+[INFO] [2020-08-14 12:48:24] XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO] [2020-08-14 12:48:25] Service.initJavaOpt(296) | set jdk.tls.namedGroups opt, value : secp256k1
+[INFO] [2020-08-14 12:48:25] ChannelConnections.init(318) |  all connections: [ConnectionInfo{host='127.0.0.1', port=20200}]
+[INFO] [2020-08-14 12:48:25] ChannelConnections.initSslContext(546) |  ca certificate: ca.crt, sdk certificate: sdk.crt, sdk key: sdk.key
+[INFO] [2020-08-14 12:48:26] ChannelHandler.userEventTriggered(45) |  handshake success, host: 127.0.0.1, port: 20200, ctx: 1908756428
+[INFO] [2020-08-14 12:48:26] ConnectionCallback.onConnect(91) |  connect 127.0.0.1:20200 success, ctx: 1908756428
+[INFO] [2020-08-14 12:48:26] ConnectionCallback.queryNodeVersion(207) |  query node version host: 127.0.0.1:20200, seq: 0951d9f78cab478f87a4fc50d0650213, content: {"jsonrpc":"2.0","method":"getClientVersion","params":[],"id":0}
+[INFO] [2020-08-14 12:48:26] ConnectionCallback$2.onResponse(258) |  node: Version [buildTime=20200619 07:25:51, buildType=Darwin/appleclang/RelWithDebInfo, chainID=1, version=2.5.0, gitBranch=HEAD, gitCommit=72c6d770e5cf0f4197162d0e26005ec03d30fcfe, supportedVersion=2.5.0], content: {"id":0,"jsonrpc":"2.0","result":{"Build Time":"20200619 07:25:51","Build Type":"Darwin/appleclang/RelWithDebInfo","Chain Id":"1","FISCO-BCOS Version":"2.5.0","Git Branch":"HEAD","Git Commit Hash":"72c6d770e5cf0f4197162d0e26005ec03d30fcfe","Supported Version":"2.5.0"}}
+
+[INFO] [2020-08-14 12:48:26] ConnectionCallback$2.onResponse(267) |  support channel handshake node: Version [buildTime=20200619 07:25:51, buildType=Darwin/appleclang/RelWithDebInfo, chainID=1, version=2.5.0, gitBranch=HEAD, gitCommit=72c6d770e5cf0f4197162d0e26005ec03d30fcfe, supportedVersion=2.5.0], content: {"id":0,"jsonrpc":"2.0","result":{"Build Time":"20200619 07:25:51","Build Type":"Darwin/appleclang/RelWithDebInfo","Chain Id":"1","FISCO-BCOS Version":"2.5.0","Git Branch":"HEAD","Git Commit Hash":"72c6d770e5cf0f4197162d0e26005ec03d30fcfe","Supported Version":"2.5.0"}}
+
+[INFO] [2020-08-14 12:48:26] ConnectionCallback$1.onResponse(167) |  channel protocol handshake success, set socket channel protocol, host: 127.0.0.1:20200, channel protocol: ChannelProtocol [protocol=3, nodeVersion=2.5.0, EnumProtocol=VERSION_3]
+[INFO] [2020-08-14 12:48:26] ConnectionCallback.sendUpdateTopicMessage(338) |  send update topic message request, seq: e78d7059b34649608c40916a56921e52, content: ["_block_notify_1"]
+[INFO] [2020-08-14 12:48:26] ConnectionCallback.queryBlockNumber(370) |  query block number host: 127.0.0.1:20200, seq: f6dbb092273a431a9e7ea2e53ea7a37f, content: {"jsonrpc":"2.0","method":"getBlockNumber","params":[1],"id":1}
+[INFO] [2020-08-14 12:48:26] ConnectionCallback$4.onResponse(395) |  query blocknumer, host:127.0.0.1:20200, blockNumber: 0 
+[INFO] [2020-08-14 12:48:26] Service.run(378) |  Connect to  nodes: [127.0.0.1:20200] ,groupId: 1 ,caCert: class path resource [ca.crt] ,sslKey: class path resource [sdk.key] ,sslCert: class path resource [sdk.crt] ,java version: 11.0.8 ,java vendor: Oracle Corporation
+[INFO] [2020-08-14 12:48:41] Async.run(19) |  default set setExeutor , pool size is 50
+[INFO] [2020-08-14 12:48:41] Async.setExeutor(81) |  set setExeutor because executor null, executor is java.util.concurrent.ThreadPoolExecutor@75120e58[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+[INFO] [2020-08-14 12:48:41] Service.onReceiveBlockNotify(1401) | Receive block notify: {"blockNumber":1,"groupID":1}
+

@@ -1,0 +1,35 @@
+2020-08-14 13:04:23.015 [main] INFO  BuildToolApplication() - Starting BuildToolApplication on zhangxueyideMacBook-Pro.local with PID 17728 (/Users/abnernat/Project/Yuhu/weId/weDID/weid-build-tools/dist/app/weid-build-tools-1.0.18-rc.2-SNAPSHOT.jar started by abnernat in /Users/abnernat/Project/Yuhu/weId/weDID/weid-build-tools)
+2020-08-14 13:04:23.025 [main] INFO  BuildToolApplication() - No active profile set, falling back to default profiles: default
+2020-08-14 13:04:24.604 [main] INFO  TomcatWebServer() - Tomcat initialized with port(s): 6102 (http)
+2020-08-14 13:04:24.618 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-6102"]
+2020-08-14 13:04:24.619 [main] INFO  StandardService() - Starting service [Tomcat]
+2020-08-14 13:04:24.619 [main] INFO  StandardEngine() - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-08-14 13:04:24.748 [main] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2020-08-14 13:04:24.749 [main] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 1648 ms
+2020-08-14 13:04:24.877 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService
+2020-08-14 13:04:24.878 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService 'asyncServiceExecutor'
+2020-08-14 13:04:25.206 [main] INFO  WelcomePageHandlerMapping() - Adding welcome page: class path resource [static/index.html]
+2020-08-14 13:04:25.409 [main] INFO  Http11NioProtocol() - Starting ProtocolHandler ["http-nio-6102"]
+2020-08-14 13:04:25.448 [main] INFO  TomcatWebServer() - Tomcat started on port(s): 6102 (http) with context path ''
+2020-08-14 13:04:25.454 [main] INFO  BuildToolApplication() - Started BuildToolApplication in 2.792 seconds (JVM running for 3.809)
+2020-08-14 13:05:17.658 [SpringContextShutdownHook] INFO  ThreadPoolTaskExecutor() - Shutting down ExecutorService 'asyncServiceExecutor'
+2020-08-14 13:05:25.161 [main] INFO  BuildToolApplication() - Starting BuildToolApplication on zhangxueyideMacBook-Pro.local with PID 18260 (/Users/abnernat/Project/Yuhu/weId/weDID/dist/app/weid-build-tools-1.0.18-rc.2-SNAPSHOT.jar started by abnernat in /Users/abnernat/Project/Yuhu/weId/weDID)
+2020-08-14 13:05:25.171 [main] INFO  BuildToolApplication() - No active profile set, falling back to default profiles: default
+2020-08-14 13:05:26.846 [main] INFO  TomcatWebServer() - Tomcat initialized with port(s): 6102 (http)
+2020-08-14 13:05:26.858 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-6102"]
+2020-08-14 13:05:26.858 [main] INFO  StandardService() - Starting service [Tomcat]
+2020-08-14 13:05:26.858 [main] INFO  StandardEngine() - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-08-14 13:05:27.036 [main] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2020-08-14 13:05:27.036 [main] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 1781 ms
+2020-08-14 13:05:27.231 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService
+2020-08-14 13:05:27.233 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService 'asyncServiceExecutor'
+2020-08-14 13:05:27.649 [main] INFO  WelcomePageHandlerMapping() - Adding welcome page: class path resource [static/index.html]
+2020-08-14 13:05:27.819 [main] INFO  Http11NioProtocol() - Starting ProtocolHandler ["http-nio-6102"]
+2020-08-14 13:05:27.858 [main] INFO  TomcatWebServer() - Tomcat started on port(s): 6102 (http) with context path ''
+2020-08-14 13:05:27.865 [main] INFO  BuildToolApplication() - Started BuildToolApplication in 3.185 seconds (JVM running for 4.505)
+2020-08-14 13:05:57.382 [http-nio-6102-exec-1] INFO  [/]() - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-14 13:05:57.382 [http-nio-6102-exec-1] INFO  DispatcherServlet() - Initializing Servlet 'dispatcherServlet'
+2020-08-14 13:05:57.392 [http-nio-6102-exec-1] INFO  DispatcherServlet() - Completed initialization in 10 ms
+2020-08-14 13:06:02.131 [http-nio-6102-exec-7] INFO  ConfigService() - [loadConfig] begin load the run.config
+2020-08-14 13:06:15.845 [http-nio-6102-exec-8] INFO  ConfigService() - [loadConfig] begin load the run.config
+2020-08-14 13:06:21.695 [http-nio-6102-exec-1] INFO  ConfigService() - [loadConfig] begin load the run.config
